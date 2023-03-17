@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * function - main
+ * main - if-else
  * Description: basic if-else statements
  * Return: success code
  */

@@ -13,9 +13,12 @@ int main(void)
 	for (digit = '0'; digit <= '8'; digit++)
 	{
 		putchar(digit);
-		putchar(',');
-		putchar(' ');
+		if (digit != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
-	putchar('9');
+	putchar('\n');
 	return (0);
 }

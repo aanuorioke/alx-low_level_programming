@@ -1,8 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 #include <stdio.h>
-
 /**
  * function - main
  * Description: basic if-else statements

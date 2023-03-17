@@ -3,7 +3,7 @@
 /* more headers goes there */
 #include <stdio.h>
 
-/*
+/**
  * function - main
  * Description: basic if-else statements
  * Return: success code

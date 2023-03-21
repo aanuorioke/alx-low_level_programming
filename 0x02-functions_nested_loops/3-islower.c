@@ -5,7 +5,7 @@
  * Description: checks if char is lowercase
  * Return: int
  */
-void _islower(int c)
+int _islower(int c)
 {
 	char letter;
 

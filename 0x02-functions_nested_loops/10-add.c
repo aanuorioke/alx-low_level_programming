@@ -10,7 +10,7 @@
  */
 int add(int a, int b)
 {
-	char sum;
+	int sum;
 	sum = a + b;
 	return (sum);
 }

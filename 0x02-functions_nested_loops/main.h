@@ -2,5 +2,5 @@
 #include <time.h>
 #include <stdio.h>
 
-int _putchar();
+void _putchar(char c);
 void print_alphabet(void);

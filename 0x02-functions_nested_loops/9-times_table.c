@@ -17,15 +17,23 @@ void times_table(void)
 		{
 			mult = i * j;
 			if (j == 0)
-				printf("%d", mult);
+				_putchar(mult + '0');
 			else
 			{
 				if (mult < 10)
 				{
-					printf(",  %d", mult);
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(mult + '0');
 				}
 				else
-					printf(", %d", mult);
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar((mult / 10) + '0');
+					_putchar((mult % 10) + '0');
+				}
 			}
 		}
 		_putchar('\n');

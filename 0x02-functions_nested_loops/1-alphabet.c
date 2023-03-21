@@ -3,9 +3,9 @@
 /**
  * print_alphabet - function
  * Description: prints the alphabets
- * Return: Nothing 
+ * Return: Nothing
  */
-void print_alphabet (void)
+void print_alphabet(void)
 {
 	char letter;
 

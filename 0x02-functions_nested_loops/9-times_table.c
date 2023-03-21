@@ -9,16 +9,23 @@ void times_table(void)
 {
 	int i;
 	int j;
+	int mult;
 
 	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 9; j++)
 		{
-			printf("%d", (i * j));
-			if ((j != 9))
+			mult = i * j;
+			if (j == 0)
+				printf("%d", mult);
+			else
 			{
-				printf(",");
-				printf(" ");
+				if (mult < 10)
+				{
+					printf(",  %d", mult);
+				}
+				else
+					printf(", %d", mult);
 			}
 		}
 		_putchar('\n');

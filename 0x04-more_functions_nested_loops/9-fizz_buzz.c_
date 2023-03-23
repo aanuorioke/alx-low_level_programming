@@ -1,0 +1,30 @@
+#include "main.h"
+
+/**
+ * main - function
+ * Description: prints numbers from 0 to 100
+ * except multiples of 3 and 5
+ * Return: Success code
+ */
+int main(void)
+{
+	int j;
+
+	for (j = 1; j <= 100; j++)
+	{
+		if (!(j % 3 == 0 || j % 5 ==0))
+		{	if (j > 99)
+				printf(j / 100 + '0');
+			if (j > 9)
+				printf(j / 10 + '0');
+			printf(j % 10 + '0');
+		}
+		else if (j % 3 == 0)
+			printf("Fizz");
+		else if (j % 5 == 0)
+			printf("FizzBuzz");
+		printf(' ');
+	}
+	printf('\n');
+	return (0);
+}

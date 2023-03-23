@@ -6,7 +6,7 @@
  * @n: the number of times to print underscore
  * Return: Nothing
  */
-void print_diagonal(int n)
+void print_triangle(int size)
 {
 	int j;
 	int k;

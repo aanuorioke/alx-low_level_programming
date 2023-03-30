@@ -9,13 +9,13 @@
  */
 char *string_toupper(char *s)
 {
-	int i;
-	int len = (int) sizeof(s) / sizeof(char);
+	int i = 0;
 
-	for (i = 0; i < len; i++)
+	while (s[i])
 	{
-		if (islower(s[i]))
+		if (isalpha(s[i]) && islower(s[i]))
 			s[i] = toupper(s[i]);
+		i++;
 	}
 	return (s);
 }

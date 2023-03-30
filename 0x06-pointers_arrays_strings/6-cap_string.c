@@ -13,6 +13,8 @@ char *cap_string(char *s)
 
 	while (s[i])
 	{
+		if (s[i] == '\t')
+			s[i] = ' ';
 		if (s[i] == ' ' || s[i] == '.' || s[i] == ','
 				|| s[i] == '\t' || s[i] == '\n'
 				|| s[i] == ';' || s[i] == '!'
@@ -20,9 +22,12 @@ char *cap_string(char *s)
 				|| s[i] == '(' || s[i] == ')'
 				|| s[i] == '{' || s[i] == '}')
 		{
-			i++;
-			if (s[i] && isalpha(s[i]))
-				s[i] -= 32;
+/**			if (s[i] != ' ' && s[i + 1] == ' ')
+				i += 2;
+			else
+*/				
+			if (isalpha(s[i + 1]))
+				s[i + 1] = toupper(s[i + 1]);
 		}
 		i++;
 	}

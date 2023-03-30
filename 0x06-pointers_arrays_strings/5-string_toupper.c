@@ -13,6 +13,9 @@ char *string_toupper(char *s)
 	int len = (int) sizeof(s) / sizeof(char);
 
 	for (i = 0; i < len; i++)
-		s[i] = toupper(s[i]);
-	return (s); 
+	{
+		if (islower(s[i]))
+			s[i] = toupper(s[i]);
+	}
+	return (s);
 }

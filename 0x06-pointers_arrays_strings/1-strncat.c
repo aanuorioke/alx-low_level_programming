@@ -2,7 +2,7 @@
 
 /**
  * _strncat - function
- * Description: concatenates two strings 
+ * Description: concatenates two strings
  * @src: source string
  * @dest: string to be appended to src string
  * @n: number of bytes to copy

@@ -2,7 +2,7 @@
 
 /**
  * _strncpy - function
- * Description: copies one string to another string 
+ * Description: copies one string to another string
  * @src: string to be copied
  * @dest: string to copy to
  * @n: number of bytes to be copied

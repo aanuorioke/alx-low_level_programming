@@ -1,0 +1,22 @@
+#include <ctype.h>
+#include "main.h"
+
+/**
+ * cap_string - function
+ * Description: capitalises all words of a string
+ * @s: string whose words are to be capitalized
+ * Return: string
+ */
+char *cap_string(char *s)
+{
+	int i;
+	int len = (int) sizeof(s) / sizeof(char);
+
+	for (i = 0; i < len; i++)
+	while (s[i])
+	{
+		if (isalpha(s[i] && islower(s[i]))
+			s[i] = toupper(s[i]);
+	}
+	return (s);
+}

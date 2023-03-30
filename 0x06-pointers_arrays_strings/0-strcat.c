@@ -2,12 +2,12 @@
 
 /**
  * _strcat - function
- * Description: concatenates two strings 
+ * Description: concatenates two strings
  * @src: source string
  * @dest: string to be appended to src string
  * Return: string
  */
 char *_strcat(char *dest, char *src)
 {
-	return (strncat(dest, src));
+	return (strcat(dest, src));
 }

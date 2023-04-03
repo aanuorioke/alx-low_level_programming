@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strpbrk - function
+ * _strstr - function
  * Description: Searches a string for another string
  * @haystack: string to be searched
  * @needle: string to search for

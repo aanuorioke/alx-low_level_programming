@@ -1,0 +1,31 @@
+#include "main.h"
+
+/**
+ * print_diagsums - function
+ * Description: Prints sum of diagonals of a square matrix
+ * @a: square matrix
+ * @size: length of square matrix
+ * Return: Nothing
+ */
+void print_diagsums(int *a, int size)
+{
+	int i;
+	int j;
+	int k;
+	int sumLeftDiag = a[0];
+	int sumRightDiag = a[size - 1];
+
+	for (i = 0; i < size; i++)
+	{
+		for (j = 0; j < size - 1; j++)
+		{
+			sumLeftDiag += a[j + size + 1];
+			sumRightDiag += a[
+		}
+		printf(", ");
+		for (k = size - 1; k >= size - 1; k = k + size - 1)
+		{
+			sumRightDiag += a[k];
+		}
+	}
+}

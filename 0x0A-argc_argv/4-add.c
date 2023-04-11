@@ -21,14 +21,11 @@ int main(int argc, char *argv[])
 		{
 			len = (int) sizeof(*argv[i]) / sizeof(char);
 
-			if (atoi(argv[i]) < 0)
-			{
-			}
-			else
+			if (!(atoi(argv[i]) < 0))
 			{
 				for (j = 0; j < len; j++)
 				{
-					if (argv[i][j] == 0)
+					if (argv[i][j] == '0')
 					{
 					}
 					else if (isalpha(argv[i][j]) || ispunct(argv[i][j]))

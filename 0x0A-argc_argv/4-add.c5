@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 					if (argv[i][j] == 0)
 					{
 					}
-					else if (isalpha(argv[i][j]) || ispunct(argv[i][j]))
+					else if (isalpha(argv[i][j]) && ispunct(argv[i][j]))
 					{
 						printf("Error\n");
 						return (1);

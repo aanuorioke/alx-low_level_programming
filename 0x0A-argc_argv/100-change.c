@@ -31,17 +31,17 @@ int main(int argc, char *argv[])
 		}
 		if (amount >= 10 && amount < 25)
 		{
-			count++;
+			count += floor(amount / 10);
 			amount = amount % 10;
 		}
 		if (amount >= 5 && amount < 10)
 		{
-			count++;
-			amount = amount % 10;
+			count += amount / 5;
+			amount = amount % 5;
 		}
 		if (amount >= 2 && amount < 5)
 		{
-			count++;
+			count += amount / 2;
 			amount = amount % 2;
 		}
 		count += amount;

@@ -19,20 +19,22 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			len = (int) sizeof(*argv[i]) / sizeof(char);
+			len = (int) sizeof(argv[i]);
 
 			for (j = 0; j < len; j++)
 			{
-				if (argv[i][j] == 0)
-				{
-				}
-				else if (isdigit(argv[i][j]) <= 0)
+				if (isdigit(argv[i][j]) == 0)
 				{
 					printf("Error\n");
 					return (1);
 				}
 			}
-			sum += atoi(argv[i]);
+				sum += atoi(argv[i]);
+			else
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 		printf("%d\n", sum);
 	}

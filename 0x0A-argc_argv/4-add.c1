@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		for (i = 1; i < argc; i++)
 		{
 			len = (int) sizeof(*argv[i]) / sizeof(char);
-
+			
 			for (j = 0; j < len; j++)
 			{
 				if (argv[i][j] == 0)

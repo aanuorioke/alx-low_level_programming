@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main -  adds 2 numbers passed as arguments to the program
+ * main -  adds numbers passed as arguments to the program
  * @argc: number of command line arguments
  * @argv: array of command line arguments
  * Return: Always 0.
@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		{
 			len = (int) sizeof(*argv[i]) / sizeof(char);
 
-			if (len == 1 && argv[i][0] == '0')
+			if (atoi(argv[i]) < 0)
 			{
 			}
 			else

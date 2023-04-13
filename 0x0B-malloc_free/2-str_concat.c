@@ -12,27 +12,30 @@ char *str_concat(char *s1, char *s2)
 	int idx = 0;
 	int i;
 	int j;
-	int len_s1 = (int) sizeof(s1);
-	int len_s2 = (int) sizeof(s2);
+	int len_s1 = (int) strlen(s1);
+	int len_s2 = (int) strlen(s2);
 
 	concatenated_str = malloc(len_s1 + len_s2 + 1);
 	if (s1 != NULL)
 	{
-		for (i = 0; i < len_s1 - 2; i++)
+		for (i = 0; i < len_s1; i++)
 		{
 			concatenated_str[idx] = s1[i];
 			idx++;
 		}
 	}
+	else
+		return (NULL);
 	if (s2 != NULL)
 	{
-		printf("s2 is not null");
 		for (j = 0; j <= len_s2; j++)
 		{
 			concatenated_str[idx] = s2[j];
 			idx++;
 		}
 	}
+	else
+		return (NULL);
 	concatenated_str[idx] = '\0';
 	return (concatenated_str);
 }
